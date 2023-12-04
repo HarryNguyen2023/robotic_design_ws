@@ -1,0 +1,11 @@
+<launch>
+    <!-- Launch server node -->
+    <node pkg="cobot_control_pkg" type="ur5_follow_traj_server" name="ur5_follow_traj_server" output="screen"/>
+    <!-- Launch client node -->
+    <node pkg="cobot_control_pkg" type="ur5_follow_traj_client" name="ur5_follow_traj_client" output="screen"/>
+
+    <!-- <node pkg="turtlesim" type="turtle_teleop_key" name="teleop_key" launch-prefix="xterm -e">
+        <remap from="turtle1/cmd_vel" to="cmd_vel"/>
+    </node> -->
+    <!-- <node pkg="cobot_control_pkg" type="agv_control" name="agv_control" output="screen"/> -->
+</launch>
