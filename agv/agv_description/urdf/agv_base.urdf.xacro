@@ -21,7 +21,8 @@
         </geometry>
       </collision>    
     
-      <xacro:box_inertial x="1.02605" y="0.728"  z="0.3" mass="1.0" />
+      <!-- <xacro:box_inertial x="10.2605" y="7.28"  z="3.0" mass="10.0" /> -->
+      <xacro:box_inertial x="51.3025" y="36.4"  z="15.0" mass="50.0" />
     </link>
 
     <gazebo reference="base_link">

@@ -18,7 +18,7 @@
         </geometry>
       </collision>
   
-      <xacro:cylinder_inertial radius="0.005" length="0.07" mass="0.1" />
+      <xacro:cylinder_inertial radius="0.005" length="0.07" mass="0.5" />
     </link>      
     
     <joint name="caster_${side}_joint" type="continuous">

@@ -34,7 +34,9 @@
 	<!-- IMU Plugin-->
 	<xacro:agv_imu />
 
-	<xacro:include filename="$(find ur5_cobot)/ur_description/urdf/ur5_robot.urdf.xacro"/> 	
+	<xacro:include filename="$(find ur5_cobot)/ur_description/urdf/ur5_joint_limited_robot.urdf.xacro"/> 	
+
+	<!-- <link name="dummy" /> -->
 
 	<joint name="base_arm_joint" type="fixed">
 		<parent link="base_link" />

@@ -2,7 +2,9 @@
 <robot xmlns:xacro="http://wiki.ros.org/xacro">
 
   <xacro:macro name="ur_arm_gazebo" params="prefix">
-
+    <gazebo reference="${prefix}cobot_base_link">
+      <selfCollide>true</selfCollide>
+    </gazebo>
     <gazebo reference="${prefix}shoulder_link">
       <selfCollide>true</selfCollide>
     </gazebo>
